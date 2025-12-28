@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+ <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Doces doces em seu doce lar</title>
+   <style>
+   :root{
+     --accent:#d87c7c; --dark:#413737; --muted:#6b6565; --bg:#fff8f7;
+     --card:#fff; --radius:14px; --maxw:1100px;
+     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+   }
+   *{box-sizing:border-box}
+   body{background-color: rgb(255, 230, 255);}
+   .wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
+   header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+   .brand{display:flex;gap:16px;align-items:center}
+   .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),violet);display:flex;align-items:center;justify-content:center;font-weight:700;color:404040
+}
+   nav a{margin-left:12px;text-decoration:none;color:var(--muted);font-weight:600}
+
+
+   .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:22px;}
+   .hero-card{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:0 8px 30px rgb(255, 51, 153)}
+   .hero h1{margin:0 0 8px;font-size:28px}
+   .hero p{margin:0;color:var(--muted)}
+
+
+   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+   .product{background:var(--card);padding:16px;border-radius:12px;min-height:120px}
+   .product h3{margin:0 0 6px}
+   .product ul{margin:0;padding-left:18px;color:var(--muted)}
+
+
+   section.recipes{margin-top:28px}
+   .recipes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+   .recipe{background:var(--card);padding:16px;border-radius:12px}
+   .recipe h4{margin:0 0 8px}
+   .ingredients{font-size:14px;color:var(--muted);line-height:1.5}
+
+   .testimonials{margin-top:28px}
+   .testimonials .card{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fffefc);box-shadow:0 6px 20px rgb(222, 0, 164)}
+   .test-row{display:flex;gap:12px;align-items:center}
+
+
+   footer{margin-top:28px;padding:18px;border-radius:12px;background:var(--card);display:flex;justify-content:space-between;align-items:center}
+
+
+   @media (max-width:980px){
+   .hero{grid-template-columns:1fr}
+   .grid{grid-template-columns:repeat(2,1fr)}
+   .recipes-grid{grid-template-columns:1fr}
+   }
+   @media (max-width:560px){
+   .grid{grid-template-columns:1fr}
+   nav a{display:none}
+   }
+
+
+   /* small utilities */
+   .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:black;text-decoration:none;font-weight:700}
+   .muted{color:var(--muted)}
+  </style>
+</head>
+  <section id="recipes" class="recipes"> 
+  <img style='float:right; border-radius: 15px;' src="https://chaparadois.com.br/wp-content/uploads/2025/01/Recheio-de-Chocolate-Facil-com-3-Ingredientes-ja-Faca.webp"  height="250px" width="300px"/>
+        <aside class="hero-card" style="align-self:start">
+            <article class="recipe" id="chocolate">
+                <h4>Recheio de Chocolate</h4>
+                <div class="ingredients">
+                    <strong>ingredientes</strong>
+                    <ul>
+                        <li>2 caixas de leite condensado</li>
+                        <li>3 colheres de cacau em pó </li>
+                        <li>1 colher de sopa de amido de milho </li>
+                        <li>2 caixas de creme de leite</li>
+                        <li>400 ml de leite integral</li>
+                        <li>300 gramas de chocolate derretido </li>
+                        <li>1 colher de sopa de manteiga</li>
+                    </ul>
+                    <strong>Modo de preparo</strong>
+                    <ol>
+                        <li>Em uma panela grande fora do fogo, coloque o leite condensado, peneire o cacau em pó e o amido de milho. Misture bem.</li>
+                        <li>Adicione o creme de leite, o leite, o chocolate derretido e a manteiga. Misture novamente, até ficar bem homogêneo.</li>
+                        <li>Ligue o fogo médio e mexa sem parar até engrossar. Quando ele estiver mais encorpado e borbulhando, desligue o fogo</li>
+                        <li>Mexa por mais um tempo, para retirar o excesso de calor. Aproveite e veja se está no ponto - quando despejar o chocolate da espátula, ele deve cair em blocos.</li>
+                        <li>Transfira o recheio de chocolate para uma travessa e aguarde amornar. Cubra com plástico-filme ou um saquinho limpo em contato com o recheio, para evitar criar a película.</li>
+                        <li>Agora aproveite!</li>
+                    </ol>
+                    <a style="text-align: right;" class="btn" href="index.html">INÍCIO</a>
+                </div>
+            </article>
+        </aside>
+  </section>
